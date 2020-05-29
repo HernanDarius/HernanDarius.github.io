@@ -35,7 +35,21 @@ layout: default
         <article class="post-preview">
           <a href=https://hdmecheverry.wixsite.com/blogofwar/post/the-monsters-under-your-bed-and-where-to-find-them >
             <h2 class= "post-title" >{{Check Out My Blog}}</h2>
-         
+         {% if post.subtitle %}
+            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+            {% else %}
+            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+            {% endif %}
+          </a>
+          <p class="post-meta">Posted by
+            {% if post.author %}
+            {{ post.author }}
+            {% else %}
+            {{ site.author }}
+            {% endif %}
+            on
+            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
+          </p>
         </article>
 
         <hr>
