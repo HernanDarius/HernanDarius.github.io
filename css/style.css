@@ -1,0 +1,96 @@
+/*Global*/
+
+body {
+    max-width: 1000px;
+    float: none;
+    margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 15px 5px 15px;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    padding: 5px 15px 5px 15px;
+}
+
+a {
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: darkgrey;
+}
+
+a:hover {
+    color: black;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    border-radius: 75%;
+    margin: 20px 0 0 20px;
+}
+
+.logo img:hover{
+   box-shadow: 0 10px 10px 0 darkgrey;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav a:hover{
+    color:darkgrey;
+}
+
+footer{
+    display: inline-block;
+    width: 100%;
+}
+
+/* homepage */
+
+main{
+    float: left;
+    width: 70%;
+    display: block;
+    min-height: 300px;
+}
+
+aside{
+    float: right;
+    width: 28%;
+    display: block;
+    min-height: 300px;
+}
+
+/* Mobile CSS */
+@media screen and (max-width: 600px){
+    main{
+        width: 100%;
+    }
+    aside{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer{
+        width:100%;
+    }
+}
