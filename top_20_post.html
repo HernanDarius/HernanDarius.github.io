@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="img/myblog_logo.png" alt="Hernan Echeverry logo"></a>
+            <a href="index.html"><img src="img/logo/myblog_logo.png" alt="Hernan Echeverry logo"></a>
         </div>
         <nav>
             <a href="index.html">Home</a> 
@@ -45,7 +45,7 @@
         subset became about 2,000 songs in the end. Even so, the usually suspects made their way into the top 20! And if you happen to 
         be a fan of Finnish hits, you'll be shockingly pleased to find these two genres make an understandably unexpected appearance:
     </p>
-    <img src="img/top_20_list.png" alt="top 20 list">
+    <img src="img/top_20/top_20_list.png" alt="top 20 list">
     <h4 align="center"><b><i>Long Train Runnin'</i></b></h3>
     <p>
         Now, if we were to just throw our 10,000 songs into a logistic regression model, bare bones and unshaven, we'd get a baseline 
@@ -57,7 +57,7 @@
         a second baseline model using the Random Forest Classifier. As this model is hyper sensitive to overfitting, it's a good tool to get an 
         idea if leakage is <a href="https://www.youtube.com/watch?v=yaTPls-m3sk" target="_blank"><i>Out of Control</i></a>.
     </p>
-    <img src="img/rf_base.png" alt="random forest base">
+    <img src="img/top_20/rf_base.png" alt="random forest base">
     <p>
         Low and behold, we have a 100 percent Training Accuracy, with a large separating it from our Validation Accuracy. So it is time 
         to mix a bit of exploration with a bit of common sense. While there are many visuals that can help us in this situation, my main 
@@ -66,7 +66,7 @@
         having a higher impact on our model is not necessarily a bad thing, and these impacts can give us better clues into what features to 
         keep and engineer, we can also use some common knowledge to better inform the decision of which features to exclude.
     </p>
-    <img src="img/pi.png" alt="permutation importance">
+    <img src="img/top_20/pi.png" alt="permutation importance">
     <h5 align="center"><b><i>Data Science Fiction/Double Feature</i></b></h3>
     <p>
         After a rumble, a tumble, and a couple of fumbles, we've finally got our dataset nice and clean and ready to be passed through a 
@@ -82,7 +82,7 @@
         (take that as you will), our confusion matrix shows us that in fact most songs seem not to, as much fewer songs end up being 
         predicted as existing in the top 20 genres.
     </p>
-    <img src="img/top_20_matrix.png" alt=" top 20 matrix">
+    <img src="img/top_20/top_20_matrix.png" alt=" top 20 matrix">
     <p>
         The model may not be perfect, but neither is all music. In the end, however, it is still (arguably) music just as our model is 
         still doing far better than worse. So for now, in the immortal words of the best song on the 2nd most underwhelming Metallica album, 
