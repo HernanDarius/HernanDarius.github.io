@@ -33,6 +33,8 @@ a:hover {
 }
 
 .logo img{
+    height: 50px;
+    width: auto;
     border-radius: 75%;
     margin: 20px 0 0 20px;
 }
@@ -66,30 +68,18 @@ footer{
 
 main{
     float: left;
-    width: 70%;
+    width: 100%;
     display: block;
     min-height: 300px;
 }
 
-aside{
-    float: right;
-    width: 28%;
-    display: block;
-    min-height: 300px;
-}
 
 /* Mobile CSS */
 @media screen and (max-width: 600px){
     main{
         width: 100%;
     }
-    aside{
-        width:100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+  
     footer{
         width:100%;
     }
