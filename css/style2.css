@@ -8,7 +8,7 @@ body {
 
 h1{
     font-family: 'Roboto Slab', serif;
-    font-size: 50px;
+    font-size: 60px;
     padding: 5px 15px 5px 15px;
 }
 
@@ -35,7 +35,7 @@ img{
     display:block;
     margin-left: auto;
     margin-right:auto;
-    width: 50%;
+    width: 35%;
 }
 
 a:hover {
@@ -60,6 +60,7 @@ a:hover {
 }
 
 nav{
+    font-size: 25px;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -119,6 +120,14 @@ main{
         font-size: 15px;
         padding: 5px 15px 5px 15px;
     }
+
+    nav{
+        font-size: 15px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+
     img{
         width: 250px;
         border-radius: 8px;

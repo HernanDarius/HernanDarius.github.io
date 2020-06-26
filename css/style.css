@@ -6,13 +6,21 @@ body {
     margin: auto;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1{
     font-family: 'Roboto Slab', serif;
+    font-size: 60px;
+    padding: 5px 15px 5px 15px;
+}
+
+h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
     padding: 5px 15px 5px 15px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
     padding: 5px 15px 5px 15px;
 }
 
@@ -42,6 +50,7 @@ a:hover {
 }
 
 nav{
+    font-size: 25px;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -75,6 +84,36 @@ main{
 @media screen and (max-width: 600px){
     main{
         width: 100%;
+    }
+    h1{
+        font-family: 'Roboto Slab', serif;
+        font-size: 35px;
+        padding: 5px 15px 5px 15px;
+    }
+    
+    h2,h3,h4,h5,h6 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 25px;
+        padding: 5px 15px 5px 15px;
+    }
+    
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        padding: 5px 15px 5px 15px;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        padding: 5px 15px 5px 15px;
+    }
+
+    nav{
+        font-size: 15px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
     }
     aside{
         width:100%;
