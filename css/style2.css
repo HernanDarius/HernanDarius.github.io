@@ -87,7 +87,11 @@ main{
     main{
         width: 100%;
     }
-  
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        padding: 5px 15px 5px 15px;
+    }
     footer{
         width:100%;
     }
