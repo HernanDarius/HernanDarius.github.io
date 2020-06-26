@@ -66,14 +66,7 @@ footer{
 
 main{
     float: left;
-    width: 70%;
-    display: block;
-    min-height: 300px;
-}
-
-aside{
-    float: right;
-    width: 28%;
+    width: 100%;
     display: block;
     min-height: 300px;
 }

@@ -23,7 +23,7 @@
         </nav>
         <hr>
     </header>
-</body>
+
 <main>
     <h1 align="center"><b>To Be, Or Not To Be In The Top 20?</b></h1>
     <h2 align="center"><b><i>The Random Forest Is Alive With The Sound Of Music</i></b> </h2>
@@ -43,6 +43,7 @@
         subset became about 2,000 songs in the end. Even so, the usually suspects made their way into the top 20! And if you happen to 
         be a fan of Finnish hits, you'll be shockingly pleased to find these two genres make an understandably unexpected appearance:
     </p>
+    <img src="img/top_20_list.png" alt="top 20 list">
     <p>
         Now, if we were to just throw our 10,000 songs into a logistic regression model, bare bones and unshaven, we'd get a baseline 
         accuracy of about 72 percent. Not great and not terrible, and it's possibly the best we get with the information we have. 
@@ -53,6 +54,7 @@
         a second baseline model using the Random Forest Classifier. As this model is hyper sensitive to overfitting, it's a good tool to get an 
         idea if leakage is <a href="https://www.youtube.com/watch?v=yaTPls-m3sk" target="_blank"><i>Out of Control</i></a>.
     </p>
+    <img src="img/rf_base.png" alt="random forest base">
     <p>
         Low and behold, we have a 100 percent Training Accuracy, with a large separating it from our Validation Accuracy. So it is time 
         to mix a bit of exploration with a bit of common sense. While there are many visuals that can help us in this situation, my main 
@@ -61,13 +63,12 @@
         having a higher impact on our model is not necessarily a bad thing, and these impacts can give us better clues into what features to 
         keep and engineer, we can also use some common knowledge to better inform the decision of which features to exclude.
     </p>
+    <img src="img/pi.png" alt="permutation importance">
     <p>
         After a rumble, a tumble, and a couple of fumbles, we've finally got our dataset nice and clean and ready to be passed through a 
         final predictive model. I decided to run my data through a Random Forest model once again after the cleaning to see if I could beat 
         the original baseline with a bit of hyperparameter tuning. And voila! I've managed to push that accuracy score to 76 percent! We're 
         not reinventing the wheel hear or setting any records, but for a pretty basic model with some
-    </p>
-    <p>
         missing features I think we've made decent headway. That being said, I also wanted to give Gradient Boosting a go, as it makes 
         somewhat better use of bagging than Random Forest in some cases. With the Gradient Boosting Classifier I was actually able to push 
         my accuracy a bit further to about 78 percent. With what I've got at the moment, this is probably the best it's going to get and 
@@ -84,4 +85,15 @@
         <i><b>Nothing Else Matter</b></i>.
 
     </p>
+    <p></p>
+    <p>
+        To Check Out This Notebook <a href="https://github.com/HernanDarius/top-20-genre" target="_blank">click here</a>!
+    </p>
+    </main>
+    <footer>
+        <hr>
+        <p align="center">Copyright &copy; 2020 Hernan Echeverry.</p>
+    </footer>
+</body>
+
 </html>
