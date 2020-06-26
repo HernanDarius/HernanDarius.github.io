@@ -32,11 +32,13 @@
         Even as I write this blog post Nick Cave & the Bad Seeds <i>Into My Arms</i> concocts a serene ebb and flow of melodies to which 
         I can focus my intention. 
     </p>
+    
     <p>
         But whether you are the ever proud and boisterous listener of the latest Top 40 tracks or the <b>too cool for school</b> deep track 
         hipster, one question plagues the everyday listener: are my favorite tunes in the top 20 genres?! Well, with the help of a few 
         standard musical metrics (and a few less standard ones) I was able to take a good crack at this question. 
     </p>
+    <h3 align="center"><b><i>Here Comes Your Data</i></b></h3>
     <p>
         A quick disclaimer before we depart on this musical journey, this model was built using a 10,000 song subset of the infamous 
         Million Song Data Set from 2011, and through some thorough cleaning (including some scrubbing and trimming) that 10,000 song 
@@ -44,6 +46,7 @@
         be a fan of Finnish hits, you'll be shockingly pleased to find these two genres make an understandably unexpected appearance:
     </p>
     <img src="img/top_20_list.png" alt="top 20 list">
+    <h4 align="center"><b><i>Long Train Runnin'</i></b></h3>
     <p>
         Now, if we were to just throw our 10,000 songs into a logistic regression model, bare bones and unshaven, we'd get a baseline 
         accuracy of about 72 percent. Not great and not terrible, and it's possibly the best we get with the information we have. 
@@ -64,6 +67,7 @@
         keep and engineer, we can also use some common knowledge to better inform the decision of which features to exclude.
     </p>
     <img src="img/pi.png" alt="permutation importance">
+    <h5 align="center"><b><i>Data Science Fiction/Double Feature</i></b></h3>
     <p>
         After a rumble, a tumble, and a couple of fumbles, we've finally got our dataset nice and clean and ready to be passed through a 
         final predictive model. I decided to run my data through a Random Forest model once again after the cleaning to see if I could beat 
