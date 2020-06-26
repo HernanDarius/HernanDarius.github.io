@@ -83,7 +83,7 @@ main{
 
 
 /* Mobile CSS */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 700px){
     main{
         width: 100%;
     }
@@ -92,6 +92,14 @@ main{
         font-size: 15px;
         padding: 5px 15px 5px 15px;
     }
+    img{
+        width: 150px;
+        border-radius: 8px;
+        display:block;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    
     footer{
         width:100%;
     }
