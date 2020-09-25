@@ -61,7 +61,7 @@
         <p>
             Now that we're able to determine how "far" each row in the dataset is from our desired target, we need some way to determine what exactly constitutes a neighbor. We have two factors to consider in terms of this decision: proximity and quantity. This is not a tremendously difficult task as Python has allows us to sort values, and combined with our euclid_distance function we can nest that function into one that helps call the number of "nearest neighbors" for our purposes. 
         </p>
-        <img src="img/neighbors/find_neighbors_plus_results.png" alt="find_neighbors">
+        <img src="img/neighbor/find_neighbors_plus_results.png" alt="find_neighbors">
         <p>
             Let's break down what's going on in this function. We're setting a few parameters here with train leading as the dataset which we want to observe and test being the observation we wish to compare, our target. Num_results, in this case, will represent the number of neighbors we wish to return. As previously mentioned, we'll want to instantiate our euclid_distance function into 
 
